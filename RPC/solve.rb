@@ -36,11 +36,11 @@ class Solve
 
   def q3
     res = {}
-    m = (data['N1'].to_f + data['N2'].to_f)/2.0
-    if (m >= 7.0) or ((m > 3.0 and m < 7.0) and (m + data['N3'].to_f)/2.0 >= 5.0)
-      res = {'aprovado': True}
+    m = (data['n1'].to_f + data['n2'].to_f)/2.0
+    if (m >= 7.0) or ((m > 3.0 and m < 7.0) and (m + data['n3'].to_f)/2.0 >= 5.0)
+      res = {'aprovado': true}
     else
-      res = {'aprovado': False}
+      res = {'aprovado': false}
     end
 
     return res
